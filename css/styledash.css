@@ -316,3 +316,15 @@ iframe{
   border-radius: 20px;
   margin: 10px auto;
 }
+@media screen and (max-width: 768px) {
+  header, nav, section, footer, hr, h1, h2, h3, h4, h5, h6, div{
+    display:none;
+  }
+  body::after
+  {
+    content: "This data is designed to be hidden from mobile phones - Please open from your ipad or labtop";
+    text-align: center;
+    padding: 20px;
+    color: #a62b4e;
+  }
+}
