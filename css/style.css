@@ -1,0 +1,287 @@
+
+/*
+dark red       --->   #a62b4e
+dark red 20%   --->   #edd5dc
+red            --->   #d91e49
+light gray     --->   #a7a9ac
+gray           --->   #939597
+dark gray      --->   #555759
+yellow         --->   #f0b323
+light yellow   --->   #f0b2239c
+green          --->   #658d1b
+light green    --->   #658d1b7e
+blue           --->   #004c97
+light green    --->   #004b9649
+
+
+
+*/ 
+
+
+/*highlights*/
+
+.highlightcontainer
+{
+  box-sizing: border-box;
+}
+
+.highlight
+{
+  
+  margin :20px;
+  border-radius: 20px;
+}
+
+.highlight h3
+{
+  padding :20px ;
+  font-weight:bold ;
+  border-radius: 20px 20px 0px 0px;
+  color: #fff;
+}
+
+.cardtitle1
+{
+  background-color: #f0b323;
+}
+.cardtitle2
+{
+  background-color: #658d1b;
+}
+.cardtitle3
+{
+  background-color: #a62b4e;
+}
+
+.highlight .highlightcontent1
+{
+  padding :20px ;
+  background-color: #f0b2239c;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.highlight .highlightcontent2
+{
+  padding :20px ;
+  background-color: #658d1b7e;
+  border-radius: 0px 0px 20px 20px;
+}
+.highlight .highlightcontent3
+{
+  padding :20px ;
+  background-color: #edd5dc;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.highlightcontent ul{
+
+  padding: 10px;
+  list-style-type: disc;
+
+}
+.highlightcontent ul li{
+
+  padding: 20px;
+
+}
+
+.perrankrelative
+{
+  position: relative;
+}
+
+.per
+{
+  width:100%;
+  border-radius: 50%;
+  padding: 2px;
+  border: 3px solid #fff;
+  box-shadow: 2px 2px 5px #777;
+}
+
+.perrank
+{
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.rankdata
+{
+  color: #fff;
+  background-color: #a62b4e;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px #777;
+}
+
+.rankdata ul{
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.rankdata ul li{
+  padding: 0px 5px;
+  font-size: smaller;
+}
+
+/* Progress bar labels */
+.chartlabel{
+text-align: left;
+margin: auto;
+font-weight: bold;
+margin-top: 10px;
+}
+
+
+/* pie */
+
+/**
+ * 1. The `reverse` animation direction plays the animation backwards
+ *    which makes it start at the stroke offset 100 which means displaying
+ *    no stroke at all and animating it to the value defined in the SVG
+ *    via the inline `stroke-dashoffset` attribute.
+ * 2. Rotate by -90 degree to make the starting point of the
+ *    stroke the top of the circle.
+ * 3. Using CSS transforms on SVG elements is not supported by Internet Explorer
+ *    and Edge, use the transform attribute directly on the SVG element as a
+ * .  workaround (https://markus.oberlehner.net/blog/pure-css-animated-svg-circle-chart/#part-4-internet-explorer-strikes-back).
+ */
+ .circle-chart__circle {
+    animation: circle-chart-fill 2s reverse; /* 1 */ 
+    transform: rotate(-90deg); /* 2, 3 */
+    transform-origin: center; /* 4 */
+  }
+  
+  /**
+   * 1. Rotate by -90 degree to make the starting point of the
+   *    stroke the top of the circle.
+   * 2. Scaling mirrors the circle to make the stroke move right
+   *    to mark a positive chart value.
+   * 3. Using CSS transforms on SVG elements is not supported by Internet Explorer
+   *    and Edge, use the transform attribute directly on the SVG element as a
+   * .  workaround (https://markus.oberlehner.net/blog/pure-css-animated-svg-circle-chart/#part-4-internet-explorer-strikes-back).
+   */
+  .circle-chart__circle--negative {
+    transform: rotate(-90deg) scale(1,1); /* 1, 2, 3  to make negative direction scale(1,-1)*/
+  }
+  
+  .circle-chart__info {
+    animation: circle-chart-appear 2s forwards;
+    opacity: 0;
+    transform: translateY(0.3em);
+  }
+  
+  @keyframes circle-chart-fill {
+    to { stroke-dasharray: 0 100; }
+  }
+  
+  @keyframes circle-chart-appear {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Layout styles only, not needed for functionality */
+  html {
+    font-family: sans-serif;
+    padding-right: em;
+    padding-left: 1em;
+  }
+  
+  .grid {
+    display: grid;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  @media (min-width: 31em) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /*SECTIONS TITLE*/
+
+  .sectiontitle{
+    margin: 50px auto -30px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #a62b4e;
+    color: #fff;
+    font-weight: bold;
+    font-size: larger;
+  }
+
+
+  /*FOOTER*/
+
+  footer{
+    background-color: #333;
+  }
+
+  footer div label{
+    color: #f0b323;
+    display: block;
+    padding: 20px 50px;
+    text-decoration: underline;
+  }
+  footer div ul{
+    display: block;
+    padding: 20px 50px;
+  }
+
+  footer div ul li{
+    list-style-type: none;
+    color: #fff;
+    display: inline;
+    padding: 5px;
+  }
+  
+  footer div ul li ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  footer div ul li ul li a:hover{
+    color: #f0b323;
+    text-decoration: none;
+  }
+
+  .footerlitop
+  {
+    color: #f0b323;
+    display: block;
+    text-align: center;
+  }
+
+  .footerli
+  {
+    list-style-type: disc;
+    display: block;
+    text-align: center;
+    font-size: smaller;
+    width: 100%;
+  }
+
+  .insiderlisr
+  {
+    display: block;
+    padding: 0%;
+  }
+  @media screen and (max-width: 768px) {
+    header, nav, section, footer, hr, h1, h2, h3, h4, h5, h6, div{
+      display:none;
+    }
+    body::after
+    {
+      content: "This data is designed to be hidden from mobile phones - Please open from your ipad or labtop";
+      text-align: center;
+      padding: 20px;
+      color: #a62b4e;
+    }
+  }

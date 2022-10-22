@@ -1,0 +1,13 @@
+.carousel-caption
+{
+    background-color: rgba(166, 43, 78, 0.8);
+}
+
+@media (min-width: 768px)
+{
+.col-md-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+    margin: auto;
+}
+}
