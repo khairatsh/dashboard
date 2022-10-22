@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Sherif Ahmed - TBC
+        </title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>        
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="../../css/bootstrap.css">
+        <link rel="stylesheet" href="../../css/stylebootstrapedit.css">
+        <link rel="stylesheet" href="../../css/stylenavdash.css"> 
+        <link rel="stylesheet" href="../../css/styledash.css"> 
+
+        
+    </head>
+    <body>
+        
+
+        <!-- START NAVBAR-->
+
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+              <h1 class="navbar-brand" href="#">Sherif Ahmed</h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      KPIs
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#Coverage-at-pl-fr">Coverage at pl.fr</a></li>
+                      <li><a class="dropdown-item" href="#cov">Coverage</a></li>
+                      <li><a class="dropdown-item" href="#cal">Call Rate</a></li>
+                      <li><a class="dropdown-item" href="#att">Attainment</a></li>
+                      <li><a class="dropdown-item" href="#edt">E-Detailing</a></li>
+                      <li><a class="dropdown-item" href="#wte">Ranking Within The Team</a></li>
+                      <li><a class="dropdown-item" href="#vte">Ranking vs teams average</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        
+        <!-- END NAVBAR-->
+
+        
+
+        <!-- START DASHBOARD-->
+        <section id="content" class="content">
+
+
+        <div class="container-fluid">
+            <div class="row ">
+
+                <!-- START highlight 1-->
+
+                <div class="col-lg-3 col-md-12 highlightcontainer" >
+
+                    <div class="highlight">
+
+                        <h3 style="text-align: center;" class="cardtitle1">Employee Info.</h3>
+
+                        <div class="highlightcontent1 highlightcontent">
+
+                            <div class="col-xs-12 userinfo"> 
+
+<!--Here-->                                <img src="../../images/ppic.png" class="per">
+<!--Here-->                                 <h3 class="username">Product Specialist</h3>
+<!--Here-->                                 <h5 class="username">Nephrology</h5>
+ <!--Here-->                                <h5 class="username">TBC</h5>
+
+                                <hr>
+                            </div>
+                    
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+                
+                <!-- END highlight 1-->
+
+                <!-- START highlight 2-->
+
+                <div class="col-lg-9 col-md-12 highlightcontainer">
+
+                    <div class="highlight">
+
+                        <h3 style="text-align: center;" class="cardtitle2">DASHBOARD</h3>
+                        
+
+                        <div class="highlightcontent2 highlightcontent">
+
+                            <!-- Start Day tracker-->
+
+                            <div class="row">
+
+                                <div class="col-lg-12 col-md-12 col-sm-12 ">
+
+                                    <div class="pie">
+
+                                        <div class="progress" style="height: 30px; border-radius: 20px; background-color: #70aeff9c;">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-gray"
+                                                 role="progressbar" aria-label="Animated striped example"
+                                                 aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width: 26%; padding: 5px; font-size: 20px; font-weight: bold; border-radius: 20px;">
+                                                              25 days
+                                            </div> 
+                                        </div>
+                                        <span>Last Calculated 20 October 2022</span>
+                                        <span style="float:right">65 days remaining</span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- end Day tracker-->
+
+                            <!-- Start kpis-->
+
+                            <div class="row">
+
+                                <!-- Start kpi1 Coverage at pl.fr-->                                
+                                <div class="pieholder col-lg-6 col-md-6 col-sm-12" id="Coverage-at-pl-fr">
+
+                                    <div class="pie">
+                                        <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                                            <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                            
+                                            <!--Edit here-->
+                                            <circle class="circle-chart__circle" stroke="#a62b4e" stroke-width="2"
+                                            
+                                            
+                                            stroke-dasharray="30,100" 
+                                            
+                                            stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                            <g class="circle-chart__info">
+                                            <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
+                                            <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Coverage at pl.fr</text>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    
+                                </div>
+                                <!-- end kpi1 Coverage at pl.fr--> 
+
+                                <!-- Start kpi2 Coverage-->                                
+                                <div class="pieholder col-lg-6 col-md-6 col-sm-12" id="cov">
+
+                                    <div class="pie">
+                                        <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                                            <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                            
+                                            <!--Edit here-->
+                                            <circle class="circle-chart__circle" stroke="#a62b4e" stroke-width="2"
+                                            
+                                            
+                                            stroke-dasharray="30,100" 
+                                            
+                                            stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                            <g class="circle-chart__info">
+                                            <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
+                                            <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Coverage</text>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    
+                                </div>
+                                <!-- end kpi2 Coverage--> 
+
+                                <!-- Start kpi3 Call Rate-->                                
+                                <div class="pieholder col-lg-6 col-md-6 col-sm-12" id="cal">
+
+                                    <div class="pie">
+                                        <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                                            <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                            
+                                            <!--Edit here-->
+                                            <circle class="circle-chart__circle" stroke="#a62b4e" stroke-width="2"
+                                            
+                                            
+                                            stroke-dasharray="30,100" 
+                                            
+                                            stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                            <g class="circle-chart__info">
+                                            <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
+                                            <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Call Rate</text>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    
+                                </div>
+                                <!-- end kpi3 Call Rate--> 
+  
+                                
+                                <!-- Start kpi4 Attainment-->                                
+                                <div class="pieholder col-lg-6 col-md-6 col-sm-12" id="att">
+
+                                    <div class="pie">
+                                        <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                                            <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                            
+                                            <!--Edit here-->
+                                            <circle class="circle-chart__circle" stroke="#a62b4e" stroke-width="2"
+                                            
+                                            
+                                            stroke-dasharray="30,100" 
+                                            
+                                            stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                            <g class="circle-chart__info">
+                                            <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
+                                            <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Attainment</text>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    
+                                </div>
+                                <!-- end kpi4 Attainment--> 
+
+                                
+                                <!-- Start kpi5 E-Detailing-->                                
+                                <div class="pieholder col-lg-12 col-md-12 col-sm-12" id="edt">
+
+                                    <div class="pie">
+                                        <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                                            <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                            
+                                            <!--Edit here-->
+                                            <circle class="circle-chart__circle" stroke="#a62b4e" stroke-width="2"
+                                            
+                                            
+                                            stroke-dasharray="30,100" 
+                                            
+                                            stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                            <g class="circle-chart__info">
+                                            <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
+                                            <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">E-Detailing</text>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    
+                                </div>
+                                <!-- end kpi5 E-Detailing--> 
+
+                                <!-- end kpis-->
+
+                                <!-- Start Ranking within team-->
+
+                            <div class="row">
+
+                                <div class="col-lg-12 col-md-12 col-sm-12 " id="wte">
+
+                                    <div class="pie">
+
+                                        <h4>Ranking Within The Team</h4>
+
+                                        
+
+                                        <!--user-->
+
+                                        <div class="progress" style="height: 10px; background-color: #ddd;">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                                 role="progressbar" aria-label="Animated striped example"
+                                                 aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width: 68%; padding: 5px; font-weight: bold;">
+                                                              
+                                            </div> 
+                                        </div>
+                                        <span style="padding: 10px ;display: block; text-align: right;">Ahmed ElSwify</span>
+
+<!--Here change teams-->                <!--user-->
+
+                                        <div class="progress" style="height: 10px; background-color: #ddd;">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                                 role="progressbar" aria-label="Animated striped example"
+                                                 aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width: 55%; padding: 5px; font-weight: bold;">
+                                                              
+                                            </div> 
+                                        </div>
+                                        <span style="padding: 10px ;display: block; text-align: right;">Heba Refaie</span>
+
+                                        <!--user-->
+
+                                        <div class="progress" style="height: 10px; background-color: #ddd;">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                                 role="progressbar" aria-label="Animated striped example"
+                                                 aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width: 87%; padding: 5px; font-weight: bold;">
+                                                              
+                                            </div> 
+                                        </div>
+                                        <span style="padding: 10px ;display: block; text-align: right;">Sameh Tahoun</span>
+
+                                        <!--user-->
+
+                                        <div class="progress" style="height: 10px; background-color: #ddd;">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                                 role="progressbar" aria-label="Animated striped example"
+                                                 aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width: 76%; padding: 5px; font-weight: bold;">
+                                                              
+                                            </div> 
+                                        </div>
+                                        <span style="padding: 10px ;display: block; text-align: right;">Sherif Ahmed</span>
+
+                                        <!--user-->
+
+                                        <div class="progress" style="height: 10px; background-color: #ddd;">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                                 role="progressbar" aria-label="Animated striped example"
+                                                 aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width: 45%; padding: 5px; font-weight: bold;">
+                                                              
+                                            </div> 
+                                        </div>
+                                        <span style="padding: 10px ;display: block; text-align: right;">Youssef Ibrahim</span>
+
+                                        <!--user-->
+
+                                        <div class="progress" style="height: 10px; background-color: #ddd;">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                                 role="progressbar" aria-label="Animated striped example"
+                                                 aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width: 95%; padding: 5px; font-weight: bold;">
+                                                              
+                                            </div> 
+                                        </div>
+                                        <span style="padding: 10px ;display: block; text-align: right;">VACANT CAIRO</span>
+
+
+
+                                    </div>
+                                    
+
+                                </div>
+
+                            </div>
+
+                            <!-- end Ranking within team-->
+
+                            <!-- Start Ranking vs other teams-->
+
+                            <div class="row">
+
+                                <div class="col-lg-12 col-md-12 col-sm-12 " id="vte">
+
+                                    <div class="pie">
+
+                                        <h4>Ranking vs teams average</h4>
+
+                                        <!--user-->
+
+                                        <div class="progress" style="height: 10px; background-color: #ddd;">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                                 role="progressbar" aria-label="Animated striped example"
+                                                 aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width: 85%; padding: 5px; font-weight: bold;">
+                                                              
+                                            </div> 
+                                        </div>
+<!--Here-->                                         <span style="padding: 10px ;display: block; text-align: right;">Sherif Ahmed</span>
+
+                                        <!--user-->
+
+                                        <div class="progress" style="height: 10px; background-color: #ddd;">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                                 role="progressbar" aria-label="Animated striped example"
+                                                 aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width: 89%; padding: 5px; font-weight: bold;">
+                                                              
+                                            </div> 
+                                        </div>
+                                        <span style="padding: 10px ;display: block; text-align: right;">Alex Team</span>
+
+                                        <!--user-->
+
+                                        <div class="progress" style="height: 10px; background-color: #ddd;">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                                 role="progressbar" aria-label="Animated striped example"
+                                                 aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width: 56%; padding: 5px; font-weight: bold;">
+                                                              
+                                            </div> 
+                                        </div>
+                                        <span style="padding: 10px ;display: block; text-align: right;">Cairo Team</span>
+
+                                        <!--user-->
+
+                                        <div class="progress" style="height: 10px; background-color: #ddd;">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                                 role="progressbar" aria-label="Animated striped example"
+                                                 aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width: 82%; padding: 5px; font-weight: bold;">
+                                                              
+                                            </div> 
+                                        </div>
+                                        <span style="padding: 10px ;display: block; text-align: right;">Nephrology</span>
+
+                                        <!--user-->
+
+                                        <div class="progress" style="height: 10px; background-color: #ddd;">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                                 role="progressbar" aria-label="Animated striped example"
+                                                 aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width: 45%; padding: 5px; font-weight: bold;">
+                                                              
+                                            </div> 
+                                        </div>
+                                        <span style="padding: 10px ;display: block; text-align: right;">Oncology</span>
+
+                                        <!--user-->
+
+                                        <div class="progress" style="height: 10px; background-color: #ddd;">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                                 role="progressbar" aria-label="Animated striped example"
+                                                 aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width: 75%; padding: 5px; font-weight: bold;">
+                                                              
+                                            </div> 
+                                        </div>
+                                        <span style="padding: 10px ;display: block; text-align: right;">National</span>
+
+                                    </div>
+                                    
+
+                                </div>
+
+                            </div>
+
+                            <!-- end Ranking vs other teams-->
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                
+                <!-- END highlight 2-->
+                
+
+            </div>
+        </div>
+    </section>
+
+        
+
+        <!-- END DASHBOARD-->
+
+
+        <!-- START FOOTER-->
+
+        <footer class="container-fluid">
+            <div class="row">
+
+                    <div >
+                        <label>NAVIGATE WEBSITE</label>
+
+                        <ul class="row">
+                            <li class="col-lg-3 col-md-3 col-sm-6">
+
+                                <ul class="insiderlisr">
+                                    <li class="footerlitop">CAIRO</li>
+                                    <li class="footerli"><a href="../../users/cairo/hagarbakr.html">HAGAR BAKR</a></li>
+                                    <li class="footerli"><a href="../../users/cairo/mohamedfawzy.html">MOHAMED FAWZY</a></li>
+                                    <li class="footerli"><a href="../../users/cairo/mostafagharib.html">MOSTAFA GHARIB</a></li>
+                                    <li class="footerli"><a href="../../users/cairo/roaamohamed.html">ROAA MOHAMED</a></li>
+                                    <li class="footerli"><a href="../../users/cairo/yassergawad.html">YASSER GAWAD</a></li>
+                                    <li class="footerli"><a href="#">VACANT</a></li>
+                                    <li class="footerli"><a href="#">VACANT</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="col-lg-3 col-md-3 col-sm-6">
+                                <ul class="insiderlisr">
+                                    <li class="footerlitop">ALEX</li>
+                                    <li class="footerli"><a href="../../users/alex/alaamosbah.html">ALAA MOSBAH</a></li>
+                                    <li class="footerli"><a href="../../users/alex/amanyfadlallah.html">AMANY FADLALLAH</a></li>
+                                    <li class="footerli"><a href="../../users/alex/marinaibrahim.html">MARINA IBRAHIM</a></li>
+                                    <li class="footerli"><a href="../../users/alex/mohamedrokaia.html">MOHAMED ROKAIA</a></li>
+                                    <li class="footerli"><a href="../../users/alex/mohamedshoaib.html">MOHAMED SHOAIB</a></li>
+                                    <li class="footerli"><a href="../../users/alex/sherifhani.html">SHERIF HANI</a></li>
+                                    <li class="footerli"><a href="#">VACANT</a></li>
+                                    <li class="footerli"><a href="#">VACANT</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="col-lg-3 col-md-3 col-sm-6">
+                                <ul class="insiderlisr">
+                                    <li class="footerlitop">NEPHROLOGY</li>
+                                    <li class="footerli"><a href="ahmedelswify.html">AHMED ELSWIFY</a></li>
+                                    <li class="footerli"><a href="hebarefaie.html">HEBA REFAIE</a></li>
+                                    <li class="footerli"><a href="samehtahoun.html">SAMEH TAHOUN</a></li>
+                                    <li class="footerli"><a href="sherifahmed.html">SHERIF AHMED</a></li>
+                                    <li class="footerli"><a href="youssefibrahim.html">YOUSSEF IBRAHIM</a></li>
+                                    <li class="footerli"><a href="#">VACANT</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="col-lg-3 col-md-3 col-sm-6">
+                                <ul class="insiderlisr">
+                                    <li class="footerlitop">ONCOLOGY</li>
+                                    <li class="footerli"><a href="../../users/oncology/ahmedosama.html">AHMED OSAMA</a></li>
+                                    <li class="footerli"><a href="../../users/oncology/ahmedsaleh.html">AHMED SALEH</a></li>
+                                    <li class="footerli"><a href="../../users/oncology/amrnashaat.html">AMR NASHAAT</a></li>
+                                    <li class="footerli"><a href="../../users/oncology/mostafaali.html">MOSTAFA ALI</a></li>
+                                    <li class="footerli"><a href="../../users/oncology/omarsaleh.html">OMAR SALEH</a></li>
+                                </ul>
+                            </li>
+
+
+                        </ul>
+
+                </div>
+
+            </div>
+            <hr class="container-fluid" style="border-color: #fff;">
+
+            <div class="col-lg-12 col-md-12 col-lg-12">
+                <label style="text-align: right; font-size: smaller; text-decoration: none;">Website made by Sherif Hani&#169;</label>
+
+                </div>
+        </footer>
+        <!-- END FOOTER-->
+ 
+        <script src="../../js/jquery-3.6.1.js"></script>
+        <script src="../../js/bootstrap.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <script src="../../js/script.js"></script>
+    </body>
+</html>
